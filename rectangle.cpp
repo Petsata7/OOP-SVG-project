@@ -166,12 +166,12 @@ void Rectangle::writeToStream(std::ostream& os) const
 		<< "<rect "
 		<< "x=\""			<< p.getX()				<< "\" "
 		<< "y=\""			<< p.getY()				<< "\" " 
-		<< "width=\""		<< width				<< "\" "
-		<< "height=\""		<< height				<< "\" "
+		<< "width=\""			<< width				<< "\" "
+		<< "height=\""			<< height				<< "\" "
 		<< "rx=\""			<< rx					<< "\" "
 		<< "ry=\""			<< ry					<< "\" "
-		<< "fill=\""		<< colours.getFill()	<< "\" "
-		<< "stroke=\""		<< colours.getStroke()	<< "\" ";
+		<< "fill=\""			<< colours.getFill()			<< "\" "
+		<< "stroke=\""			<< colours.getStroke()			<< "\" ";
 		
 
 	if (colours.getStrokeWidth() > 1)
