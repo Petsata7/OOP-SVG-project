@@ -111,7 +111,7 @@ bool Polygon::within(FigureType type, const double * coordinates, unsigned size)
 
 
 
-		for (unsigned i = 0; i < this->size; ++i) //tuk
+		for (unsigned i = 0; i < this->size; ++i) 
 		{
 			
 
