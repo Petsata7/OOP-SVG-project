@@ -111,7 +111,7 @@ bool Polyline::within(FigureType type, const double * coordinates, unsigned size
 		polygon.setCoord(coordinates, size);
 
 
-		for (unsigned i = 0; i < this->size; ++i) //tuk
+		for (unsigned i = 0; i < this->size; ++i) 
 		{
 
 			if ( !(point[i].getX() >= polygon.getX() && point[i].getX() <= polygon.getX() + polygon.getWidth()) )
