@@ -132,8 +132,8 @@ void Circle::print()
 {
 	std::cout
 		<< "circle "
-		<< center << " " << radius	<< " " << colours.getFill() << " " 
-		<< colours.getStroke()		<< " " << colours.getStrokeWidth() << '\n';
+		<< center << " " << radius	<< " " << colours.getFill() 		<< " " 
+		<< colours.getStroke()		<< " " << colours.getStrokeWidth() 	<< '\n';
 
 }
 
@@ -141,11 +141,11 @@ void Circle::writeToStream(std::ostream& os) const
 {
 	os
 		<< "<circle "
-		<< "cx=\""		<< center.getX()		<< "\" "
-		<< "cy=\""		<< center.getY()		<< "\" "
+		<< "cx=\""		<< center.getX()			<< "\" "
+		<< "cy=\""		<< center.getY()			<< "\" "
 		<< "r=\""		<< radius				<< "\" "
-		<< "fill=\""	<< colours.getFill()	<< "\" "
-		<< "stroke=\""	<< colours.getStroke()	<< "\" ";
+		<< "fill=\""		<< colours.getFill()			<< "\" "
+		<< "stroke=\""		<< colours.getStroke()			<< "\" ";
 
 	if (colours.getStrokeWidth() > 1)
 		os << "stroke-width=\"" << colours.getStrokeWidth() << "\" ";
