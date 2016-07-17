@@ -25,7 +25,7 @@ private:
 
 	char fill[64];
 	char stroke[64];
-	int	 stroke_width;
+	int  stroke_width;
 
 };
 
