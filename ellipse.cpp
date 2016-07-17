@@ -63,9 +63,8 @@ void Ellipse::translate(const Point& tr)
 {
 	center.translate(tr);
 
-
-	setTopLeft(Point(center.getX() - radius, center.getY() - ry));
-	setBtmRight(Point(center.getX() + radius, center.getY() + ry));
+	setTopLeft( Point(center.getX() - radius, center.getY() - ry) );
+	setBtmRight( Point(center.getX() + radius, center.getY() + ry) );
 }
 
 
@@ -124,7 +123,7 @@ void Ellipse::print()
 
 	std::cout
 		<< "ellipse "
-		<< center << " " << radius	<< " " << ry << " "  << colours.getFill()	<< " "
+		<< center << " " << radius	<< " " << ry << " "  << colours.getFill()		<< " "
 		<< colours.getStroke()		<< " " << colours.getStrokeWidth()			<< '\n';
 	
 }
@@ -135,10 +134,10 @@ void Ellipse::writeToStream(std::ostream& os) const
 		<< "<ellipse "
 		<< "cx=\""		<< center.getX()		<< "\" "
 		<< "cy=\""		<< center.getY()		<< "\" "
-		<< "rx=\""		<< radius				<< "\" "
-		<< "ry=\""		<< ry					<< "\" "
-		<< "fill=\""	<< colours.getFill()	<< "\" "
-		<< "stroke=\""	<< colours.getStroke()	<< "\" ";
+		<< "rx=\""		<< radius			<< "\" "
+		<< "ry=\""		<< ry				<< "\" "
+		<< "fill=\""		<< colours.getFill()		<< "\" "
+		<< "stroke=\""		<< colours.getStroke()		<< "\" ";
 
 	if (colours.getStrokeWidth() > 1)
 		os << "stroke-width=\"" << colours.getStrokeWidth() << "\" ";
