@@ -112,7 +112,7 @@ const char * Figure::getName() const
 		case	ellipse:	return "ellipse";
 		case	polyline:	return "polyline";
 		case	polygon:	return "polygon";
-		default:			return "none";
+		default:		return "none";
 	}
 
 
